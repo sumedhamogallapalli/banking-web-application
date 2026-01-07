@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <p>SRM BANK</p>
+    </div>
+    <div id="container">
+      <h1>Welcome to SRM Bank</h1>
+      <div id="buttons">
+        <button class="btn add-btn">Create Account</button>
+        <button class="btn update-btn">Update Balance</button>
+        <button class="btn details-btn">Account Details</button>
+        <button class="btn trs-btn">Transfer Amount</button>
+      </div>
+      <div id="sections">
+        <div id="create" class="hide">
+          <h1>Create Account</h1>
+          <form id="create-form">
+            <input type="text" readonly id="accnt-no" />
+            <br /><br />
+            <input
+              type="text"
+              id="accnt-name"
+              placeholder="Account Holder Name"
+              required
+            />
+            <br /><br />
+            <input
+              type="number"
+              placeholder="Opening Balance"
+              id="open-bal"
+              required
+            />
+            <br /><br />
+            <input type="text" placeholder="City" id="city" required />
+            <br /><br />
+            <button class="btn" id="create-btn">Create Account</button>
+          </form>
+        </div>
+        <div id="updation" class="hide">
+          <h1>Transaction</h1>
+          <form id="trans-form">
+            <input
+              type="text"
+              id="trans-account-no"
+              placeholder="Enter account no."
+            />
+            <br /><br />
+            <input type="number" placeholder="Enter Amount" id="up-amnt" />
+            <br /><br />
+            <select id="trans-type">
+              <option value="1">Withdraw</option>
+              <option value="2">Deposit</option>
+            </select>
+            <br /><br />
+            <button class="btn" id="trans-btn">Continue</button>
+          </form>
+        </div>
+        <div id="details" class="hide">
+          <h1>Account Details</h1>
+          <table>
+            <tr>
+              <th>Sno</th>
+              <th>Acc No</th>
+              <th>Name</th>
+	      <th>Balance</th>
+	      <th>City</th>
+            </tr>
+            <tbody id="acc-data"></tbody>
+          </table>
+        </div>
+        <div id="transfer" class="hide">
+          <h1>Transfer</h1>
+          <input type="text" id="sender" placeholder="Sender Account No">
+          <br><br>
+          <input type="text" id="receiver" placeholder="Receiver Account No">
+          <br><br>
+          <input type="number" id="amount" placeholder="Enter amount">
+          <br><br>
+          <button class="btn" id="transfer-btn">Transfer</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

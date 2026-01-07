@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+th{
+    border-bottom: 1px solid lightgray;
+
+    padding: 0.4rem 0;
+}
+td{
+    padding: 0.5rem;
+}
+.btn{
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 8px;
+}
+.add-btn{
+    background-color: rgb(18, 197, 18);
+    color: white;
+}
+.details-btn{
+    background-color: goldenrod;
+    color: white;
+
+}
+.update-btn{
+    background-color: rgb(40, 40, 212);
+    color: white;
+}
+.trs-btn{
+    background-color: maroon;
+    color: white;
+}
+#header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+#transfer-btn,#trans-btn,#create-btn{
+    background-color: orange;
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
